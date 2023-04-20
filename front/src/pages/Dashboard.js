@@ -16,9 +16,9 @@ function Dashboard(){
 	const onSub = (e)=>{
 		e.preventDefault()
 		
-		//const pickerTab = ['#03D5B7','#E1E3E3', '#6FCA51', '#7C69EA', '#FBC805', '#9231FC', '#46CAF9', '#FF0CFB' ]
+		const pickerTab = ['#03D5B7','#E1E3E3', '#6FCA51', '#7C69EA', '#FBC805', '#9231FC', '#46CAF9', '#FF0CFB' ]
 		
-		//const color = pickerTab[Math.floor(Math.random()*9)]
+		const color = pickerTab[Math.floor(Math.random()*9)]
 		//send items to goal data base
 		setGoals(goals=> [...goals, {id:goals.length+1 ,...fGoal}])
 		//console.log(fGoal)
