@@ -19,7 +19,7 @@ function Header({ user }) {
 						</li>
 						<li>
 							<a href="/profile">
-								<img src={user.avatar} />,,,, {user.name}
+								<img src={user.avatar} alt={user.name} />: {user.name}
 							</a>
 						</li>
 					</>

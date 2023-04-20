@@ -5,11 +5,7 @@ import { TbEggCracked } from "react-icons/tb";
 import { GiFinishLine } from "react-icons/gi";
 
 function GoalItem(props) {
-	const [showEditForm, setShowEditForm] = useState(false);
-
-	const onUpdateGoal = () => {
-		console.log("update");
-	};
+	const [showEditForm] = useState(false);
 
 	return (
 		<div
