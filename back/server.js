@@ -16,11 +16,10 @@ db();
 app.use(express.urlencoded({ extended: true }));
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json())
-app.use(cors(
+app.use(cors({origin: "https://golden-mooncake-83dcd9.netlify.app",credentials:true}))
 	//origin: "http://localhost:3000", //React app location connect
 	//credentials:true
-))
-
+	//
 //app.use(passport.initialize())
 app.set('trust proxy',1)
 app.use(session( {
