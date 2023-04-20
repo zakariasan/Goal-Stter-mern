@@ -8,8 +8,7 @@ const passport = require('passport')
 const passportLocal = require('passport-local').Strategy;
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcryptjs')
-const session = require('express-session')
-const MongoStore = require('connect-mongo')
+const session = require('cookie-session')
 
 
 db();
@@ -37,12 +36,7 @@ app.use(session( {
 		/*collection : 'sessions'*/
 	/*}),*/
 }))
-app.use(function(req,res,next){
-if(!req.session){
-    return next(new Error('Oh no')) //handle error
-}
-next() //otherwise continue
-});
+
 app.use(cookieParser("abdosecret")) //same secret of session
 app.use(passport.initialize())
 app.use(passport.session())
