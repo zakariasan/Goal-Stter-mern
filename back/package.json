@@ -4,7 +4,7 @@
 	"description": "app to set goals of futur",
 	"main": "server.js",
 	"scripts": {
-		"server": "nodemon server.js",
+		"devs": "node server.js",
 		"client": "npm start --prefix ../front",
 		"dev": "concurrently \"npm run client\" \"npm run server\"",
 		"test": "echo \"Error: no test specified\" && exit 1",

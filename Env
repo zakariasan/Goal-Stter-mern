@@ -1,0 +1,8 @@
+NODE_ENV = devOps
+PORT = 5000
+MONGO_URI='mongodb+srv://zak12343:zak12345@traversymern.hkgwtaa.mongodb.net/goalSetter?retryWrites=true&w=majority'
+JWT_SECRET = hello_zak_tryToken
+REFRESH_TOKEN_SECRET = fgkjddshfdjh773bdjsj84-jdjd774
+SESSION_EXPIRY = 60 * 15
+REFRESH_TOKEN_EXPIRY = 60 * 60 * 24 * 30
+COOKIE_SECRET = jhdshhds884hfhhs-ew6dhjd
